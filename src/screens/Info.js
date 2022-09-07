@@ -22,6 +22,8 @@ const Info = () => {
               </div>
               <div className="col-6">
                 <p className="info_text2">{data.overview}</p>
+
+                
               </div>
             </div>
           </div>

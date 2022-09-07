@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { GrConfigure } from 'react-icons/gr';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
+import { BsFillPlayCircleFill } from 'react-icons/bs';
+
 import "./Home.css";
 
 const Home = () => {
@@ -21,10 +23,10 @@ const Home = () => {
 
     const naviget = useNavigate()
     const GrConfigure = (v) => {
-        naviget('/info', 
-        {
-            state: v
-        }
+        naviget('/info',
+            {
+                state: v
+            }
         )
     }
 
@@ -42,11 +44,17 @@ const Home = () => {
                             Today
                             sort Bay
                         </p>
-
                     </div>
-
+                    <div className="home_card">
+                        <div className="home_title1">
+                            <p className="home_icons"><BsFillPlayCircleFill /></p>
+                            <p className="home_name">Bheeshma Parvam </p>
+                            <div className="border"></div>
+                            <p className="sana">02:59</p>
+                        </div>
+                    </div>
                     <div className="bottom">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia molestias laudantium, error ex cumque ipsam a minus dicta vel ab perferendis, nemo et assumenda molestiae magnam eligendi eius nobis veniam illo deleniti esse incidunt. Molestiae, eius officia fuga quisquam recusandae sed laudantium delectus tempora, explicabo ipsam amet! Eos quas in facere, odit quaerat eum. Possimus quaerat distinctio voluptatum aperiam dolorum similique, eum atque commodi cupiditate ducimus voluptatem, repellat a est quis labore blanditiis deleniti accusantium maiores sequi recusandae consequatur quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui itaque maxime exercitationem. <br /> <br /> Illum facere mollitia dignissimos debitis autem nemo suscipit alias, quidem culpa eos atque a fugiat quibusdam necessitatibus, obcaecati cum quo itaque officia quia perferendis molestiae fuga eligendi, hic quod. Quis, itaque. Repudiandae accusamus quo amet illo aperiam repellendus illum obcaecati fugit, eum voluptatum dolore placeat eos omnis delectus sequi deleniti animi! Tenetur, laudantium? Necessitatibus cupiditate pariatur, neque ullam debitis assumenda laboriosam omnis modi vel odio molestiae et, iure natus minima officiis esse quam at velit nisi veritatis in hic exercitationem incidunt excepturi? Iste modi deleniti provident sint!
+
                     </div>
                 </div>
                 <div className="col-9">
@@ -57,7 +65,10 @@ const Home = () => {
                                     return <div className='col-4'>
                                         <div className="card" onClick={() => GrConfigure(v)}>
                                             <img className='map_img' src={`https://image.tmdb.org/t/p/original${v.backdrop_path}`} alt="" />
-                                            <h5 className="title"> {v.title} </h5>
+                                            <div className="home_map-bottom">
+                                                <h5 className="title"> {v.title} </h5>
+                                                <p className="home_data">{v.release_date}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 })

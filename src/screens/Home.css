@@ -1,21 +1,119 @@
-.map_img{
+.map_img {
     object-fit: cover;
     width: 100%;
-    
+
 }
 
-.card{
+.card {
     background-color: rgb(67, 65, 65) !important;
-    border-radius: 50px;
+    border-radius: 15px;
     margin: 10px 10px;
     cursor: pointer;
-    
+
 }
 
-.title{
+.home_map-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
     text-align: center;
     color: white;
     padding: 10px;
-    font-size: 15px;
+    font-size: 12px;
 }
 
+.home_data {
+    color: aqua;
+    padding-right: 8px;
+}
+
+.home_img1 {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.home_info-title {
+    background-color: rgba(0, 0, 0, 0.338);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    top: 52%;
+    left: 40px;
+
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.home_card {
+    background-image: url("./../../public/rasm-1.jpg");
+    background-color: #cccccc;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+
+.home_title1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 60px;
+    border-top-left-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.687);
+}
+
+.home_icons {
+    font-size: 35px;
+    color: rgba(245, 237, 237, 0.904);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.home_name {
+    margin-top: 14px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    
+}
+.home_icons:hover{
+    transform: translateY(5px);
+}
+
+.border{
+    width: 2px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+
+.sana {
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 5px 0;
+    margin-top: 15px;
+    font-size: 10px;
+    width: 50px;
+    border-radius: 10px;
+}
