@@ -7,7 +7,7 @@ const Info = () => {
   const [data, setdata] = useState(locetion.state)
   return (
     <div>
-        <img className='info_img' src={`https://image.tmdb.org/t/p/original${v.backdrop_path}`} alt="" />
+        {/* <img className='info_img' src={`https://image.tmdb.org/t/p/original${v.backdrop_path}`} alt="" /> */}
     </div>
   )
 }
