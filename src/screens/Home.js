@@ -3,6 +3,7 @@ import { GrConfigure } from 'react-icons/gr';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import { BsFillPlayCircleFill } from 'react-icons/bs';
+import { AiFillPlusCircle } from 'react-icons/ai';
 
 import "./Home.css";
 
@@ -53,8 +54,36 @@ const Home = () => {
                             <p className="sana">02:59</p>
                         </div>
                     </div>
-                    <div className="bottom">
 
+                    <div className="home_card2">
+                        <div className="home_title1">
+                            <p className="home_icons"><BsFillPlayCircleFill /></p>
+                            <p className="home_name">Bheeshma Parvam </p>
+                            <div className="border"></div>
+                            <p className="sana">02:59</p>
+                        </div>
+                    </div>
+                    <div className="bottom">
+                        <h5 className="home_title3">
+                            Favourite genres
+                        </h5>
+                        <div className="card_genres">
+                            <p className="genres_text">Action</p>
+                            <p className="genres_text">Western</p>
+                            <p className="genres_text">Adventures</p>
+                            <p className="genres_text">Drama</p>
+                            <p className="genres_text">Sci-Fi</p>
+                        </div>
+                        <div className="add_yours">
+                            <p className="bottom_icons"><AiFillPlusCircle/></p>
+                            <p className="add_yours-text">Add your Favourite genres</p>
+                        </div>
+
+                        <div className="bottom_three">
+                            <p className="three">Crime</p>
+                            <p className="three">Comedy</p>
+                            <p className="three">Thriler</p>
+                        </div>
                     </div>
                 </div>
                 <div className="col-9">
