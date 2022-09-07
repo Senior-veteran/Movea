@@ -1,0 +1,23 @@
+.body{
+    position: relative;
+}
+
+.info_img{
+    object-fit: cover;
+    width: 100%;
+    filter: blur(10px);
+}
+
+.info_text{
+    position: absolute;
+    top: 30px;
+    color: white;
+}
+
+.info_img2{
+    width: 100%;
+}
+
+.info_text2{
+    font-size: 25px;
+}

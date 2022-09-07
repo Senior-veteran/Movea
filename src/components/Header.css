@@ -24,6 +24,7 @@ ul li{
     align-items: center;
     padding: 20px 80px !important;
     border-bottom: solid 2px rgb(67, 65, 65);
+    background-color: black;
 }
 
 .header_midle {
