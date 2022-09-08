@@ -75,7 +75,7 @@ const Home = () => {
                             <p className="genres_text">Sci-Fi</p>
                         </div>
                         <div className="add_yours">
-                            <p className="bottom_icons"><AiFillPlusCircle/></p>
+                            <p className="bottom_icons"><AiFillPlusCircle /></p>
                             <p className="add_yours-text">Add your Favourite genres</p>
                         </div>
 

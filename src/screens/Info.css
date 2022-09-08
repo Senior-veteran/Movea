@@ -2,6 +2,12 @@
     position: relative;
 }
 
+
+.info-title1{
+    padding-bottom: 25px;
+    width: 10px;
+}
+
 .info_img{
     object-fit: cover;
     width: 100%;
@@ -15,9 +21,68 @@
 }
 
 .info_img2{
-    width: 100%;
+    width: 400px;
+    height: 500px;
 }
 
 .info_text2{
     font-size: 25px;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.col_4-top{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 28px;
+}
+
+.col_4-info{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.395);
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 11px;
+    line-height: 15px;
+    margin-left: 8px;
+}
+
+.col_4-info:nth-child(6){
+    color: yellow;
+}
+
+.col_4-button{
+    background: linear-gradient(90deg, rgb(63, 139, 160) 0%, rgba(128, 69, 164, 0.575) 52%, rgba(125, 29, 119, 0.63) 100%);
+    color: white;
+    margin-left: 28px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.col_4-button2{
+    background: linear-gradient(90deg, rgba(63, 139, 160, 0.438) 0%, rgba(128, 69, 164, 0.352) 52%, rgba(125, 29, 119, 0.237) 100%);
+    color: white;
+    margin-left: 28px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.col-3{
+    border: none;
+}
+
+.col_3-text{
+ padding-left: 70px;   
+}
+
+.img{
+    background-image: url("./../../public/Marvel.svg.png");
+    
 }
